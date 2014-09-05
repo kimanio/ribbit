@@ -11,26 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :sername %><br>
-    <%= f.text_field :sername %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
-  </div>
-  <div class="field">
-    <%= f.label :avatar_url %><br>
-    <%= f.text_field :avatar_url %>
-  </div>
+ 
+    
+    <%= f.text_field :email, placeholder: "email" %>
+    
+    <%= f.text_field :sername, placeholder: "username" %>
+  
+    <%= f.text_field :name, placeholder: "name" %>
+
+   <%= f.password_field :password, placeholder: "password" %>
+
+     <%= f.password_field :password_confirmation, placeholder: "password" %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
